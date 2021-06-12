@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { LabsComponent } from './labs/labs.component';
 import { AdminsComponent } from './admins/admins.component';
 import { TestsComponent } from './tests/tests.component';
+import { CustomersComponent } from './customers/customers.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { TestsComponent } from './tests/tests.component';
     HomeComponent,
     LabsComponent,
     AdminsComponent,
-    TestsComponent
+    TestsComponent,
+    CustomersComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

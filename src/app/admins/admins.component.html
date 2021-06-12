@@ -1,1 +1,48 @@
-<h1> {{tit}}</h1>
+<h1> Admins </h1>
+<h2> {{tit}}</h2>
+<div>
+  <p>
+    Username <input [(ngModel)]="username" type="=text">
+  </p>
+  <p>
+    Password <input [(ngModel)]="password" type="=text">
+  </p>
+  <button class="orange" (click)='login()'>Create Admins! </button>
+  <strong style="font-size: 20px;" > Your username : {{loginRequest.get(password)}}</strong>
+</div>
+
+<br /><br />
+<div >
+<table style="width:100%">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Username</th>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>RamessesII</td>
+    <td>Ozymandias</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Jackson</td>
+    <td>PopKing</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Aries</td>
+    <td>MadK</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>Thomas Shelby</td>
+    <td>Peaky</td>
+  </tr>
+  <tr>
+    <td>879</td>
+    <td>Jake Gyllenhaal</td>
+    <td>NightCrawler</td>
+  </tr>
+</table>
+</div>

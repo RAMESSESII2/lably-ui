@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
   <div class="container">
   <a routerLink = "/"> Lably-UI</a>
   <nav>
@@ -13,6 +13,35 @@
     </ul>
   </nav>
   </div>
+</header>
+
+<router-outlet></router-outlet> -->
+<header>
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink = "/home"><i class="fas fa-tachometer-alt"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink = "/labs"><i class="fas fa-tachometer-alt"></i>Labs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink = "/tests"><i class="fas fa-tachometer-alt"></i>Tests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink = "/customers"><i class="fas fa-tachometer-alt"></i>Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink = "/admins"><i class="fas fa-tachometer-alt"></i>Admins</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <router-outlet></router-outlet>
